@@ -1,0 +1,8 @@
+<h1>{{ title }}</h1>
+<p id="sent"></p>
+<script>
+    var name = sessionStorage.getItem("Name");
+    var email = sessionStorage.getItem("Email");
+    var message = sessionStorage.getItem("Message");
+    document.getElementById("sent").value = name + ", " + email + ", " + message;
+</script>

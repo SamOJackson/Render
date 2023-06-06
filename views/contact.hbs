@@ -20,12 +20,12 @@
         }
         else{
             document.getElementById("return").value = "Message Sent.";
+            sessionStorage.setItem("Name", name);
+            sessionStorage.setItem("Email", email);
+            sessionStorage.setItem("Message", message);
         }
 
     }
 
-</script>
-<p id="sent"></p>
-<script>
-    document.getElementById("sent").value = name + ", " + email + ", " + message;
+
 </script>

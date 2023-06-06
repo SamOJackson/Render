@@ -6,6 +6,9 @@ router.get('/', (req, res, next) =>{
 
 });
 
+router.get('action', (req, res, next) =>{
+    res.render('action', { title: 'Messages' });
+  });
 
 module.exports = router;
 

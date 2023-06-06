@@ -18,4 +18,8 @@ router.get('contact', (req, res, next) =>{
   res.render('contact', { title: 'Contact Me' });
 });
 
+router.get('action', (req, res, next) =>{
+  res.render('action', { title: 'Messages' });
+});
+
 module.exports = router;
