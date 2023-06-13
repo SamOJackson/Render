@@ -1,8 +1,14 @@
 <h1>{{ title }}</h1>
-<p id="sent"></p>
 <script>
-    var name = sessionStorage.getItem("Name");
-    var email = sessionStorage.getItem("Email");
-    var message = sessionStorage.getItem("Message");
-    document.getElementById("sent").value = name + ", " + email + ", " + message;
+    const myKeyValues = window.location.search;
+    const urlParams = new URLSearchParams(myKeyValues);
+
+    const param1 = urlParams.get('name');
+    const param2 = urlParams.get('email');
+    const param3 = urlParams.getAll('message');
 </script>
+<p id="sent"></p>
+<p id="mess"></p>
+<br>
+<p><a href="./">Home</a></p>
+</section>

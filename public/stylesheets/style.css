@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:darkslateblue;
+  color: azure;
 }
 
 a {
@@ -9,4 +11,64 @@ a {
  
 h1{
   background-color:beige;
+  color:black;
+  text-align: center;
+}
+li{
+  list-style:none;
+}
+.index{
+  height: 100%;
+  width: 100%;
+  background-image: "https://i.ibb.co/r3KFJcB/Hello-World.jpg";
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.projects{
+  text-align:center;
+  /* background-image: "../../images/HelloWorld.jpg"; */
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content:center;
+}
+.about{
+  /* background-image: "../../images/me.jpg"; */
+  text-align: center;
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items:center;
+  justify-content: center;
+}
+.p{
+  font-size: 12px;  
+  padding: 5%;
+}
+.q{
+  padding: 5%;
+
+  font-size: 12px;
+}
+.contact{
+  text-align:center;
+  /* background-image: "../../images/sample-2.jpg"; */
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items:center;
+  justify-content: center;
+}
+.action{
+  text-align:center;
+  /* background-image: "../../images/sample-2.jpg"; */
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items:center;
+  justify-content: center;
 }

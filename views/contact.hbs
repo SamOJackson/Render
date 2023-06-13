@@ -1,31 +1,36 @@
-<h1>{{title}}</h1>
-<p>Contact Form: Please leave me a message along with your email.</p>
-<form action="mailto:jacksonosamuel@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" id="name" placeholder="Name" required></input>
-    <input type="email" name="email" id="email" placeholder="Email" required></input>
-    <input type="text" name="message" id="message" placeholder="Message" required></input>
-    <input type="submit" value="Submit"></input>
-</form>
-<p id="return"></p>
-<script>
-    document.getElementById("submit").addEventListener("click", getInfo);
-    
-    function getInfo(){
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-
-        if(name == null || email == null || message == null){
-            document.getElementById("return").value = "Invalid information.";
+<section class="contact">
+    <h1>{{title}}</h1>
+    <p>Contact Form: Please leave me a message along with your email.</p>
+    <form action="/action.hbs" enctype="multipart/form-data">
+        <input type="text" name="name" id="name" placeholder="Name" required></input>
+        <input type="email" name="email" id="email" placeholder="Email" required></input>
+        <input type="text" name="message" id="message" placeholder="Message" required></input>
+        <button type="submit" onclick="getInfo();">Submit</button>
+    </form>
+    <p id="return"></p>
+    <script>
+        document.getElementById("submit").addEventListener("click", getInfo);
+        
+        function getInfo(){
+            var name = document.querySelector('name').value;
+            var email = document.querySelector("email").value;
+            var message = document.querySelector("message").value;
+            console.log(name + email + message);
+            
+           // if(name == null || email == null || message == null){
+            //    document.getElementById("return").innerText = "Invalid information.";
+           // }
+           // else{
+            document.getElementById("from").innerText = "From: " + name + " " + email;
+            document.getElementById("m").innerText ="Message: " + message;
+           // }
         }
-        else{
-            document.getElementById("return").value = "Message Sent.";
-            sessionStorage.setItem("Name", name);
-            sessionStorage.setItem("Email", email);
-            sessionStorage.setItem("Message", message);
-        }
-
-    }
+    </script>
+    <p id="from"></p>
+    <p id="m"></p>
+    <br>
+    <a href="https://ibb.co/zm5pNy7"><img src="https://i.ibb.co/PrYKt79/sample-2.jpg" alt="sample-2" border="0" /></a>
 
 
-</script>
+    <p><a href="./">Home</a></p>
+</section>
