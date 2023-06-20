@@ -3,23 +3,23 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Portfolio: Sam Jackson' });
+  res.render('index', { title: 'Jackson Family tree' });
 });
 
-router.get('about', (req, res, next) =>{
-  res.render('about', { title: 'About Me' });
+router.get('Sam', (req, res, next) =>{
+  res.render('Sam', { title: 'Me: Sam' });
 });
 
-router.get('projects', (req, res, next) =>{
-  res.render('projects', { title: 'My Projects' });
+router.get('Andy', (req, res, next) =>{
+  res.render('Andy', { title: 'My dad: Andy' });
 });
 
-router.get('contact', (req, res, next) =>{
-  res.render('contact', { title: 'Contact Me' });
+router.get('Sachi', (req, res, next) =>{
+  res.render('Sachi', { title: 'My mom: Sachi' });
 });
 
-router.get('action', (req, res, next) =>{
-  res.render('action', { title: 'Messages' });
+router.get('Noah', (req, res, next) =>{
+  res.render('Noah', { title: 'My Brother: Noah' });
 });
 
 module.exports = router;
